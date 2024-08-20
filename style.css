@@ -255,7 +255,7 @@ form{
     color: white;
     padding: 10px;
     margin: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .pdfimg{
@@ -275,5 +275,5 @@ form{
     border: 1px solid #fdb414;
     background: #4270a1;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
 }
