@@ -31,9 +31,11 @@ a{
    border: solid 1px var(---principal2);
    border-radius: 15px;
    max-width: fit-content;
-   margin: auto;
-   margin-top: 20px;
    background-color: var(---principal);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 .principal img {
    max-width: 25%; /* Tamanho máximo da imagem */
