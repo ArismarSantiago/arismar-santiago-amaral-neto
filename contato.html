@@ -1,0 +1,56 @@
+
+<!-- html usado -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header contendo nav, menu com lista <ul> e links html -->
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="lismenu"><a href="index.html">Inicio</a></li>
+                <li class="lismenu"><a href="Codigo.html">Codigo usado</a></li>
+                <li class="lismenu"><a href="contato.html">Contato</a></li>
+                <li class="lismenu"><a href="Portfolio.html">Portfolio</a></li>
+                <li class="lismenu"><a href="quemsou.html">Quem sou?</a></li>
+            </ul>          
+        </nav>
+    </header>
+<!-- titulo e dados contendo minha imagem, RU e idade -->
+    <div class="principal">
+        <img src="eu.jpg" alt="Descrição da imagem">
+        <div class="dados">
+            <span class="titulo">Trabalho: Fundamentos da Programação Web</span>
+            <p class="descri">Nome: Arismar Santiago Amaral Neto<br>Idade: 23 Anos<br>RU: 4696526</p>
+        </div>
+    </div>
+<!-- aqui começa o formulario -->
+    <div class="contato">
+        <form action="" method="post">
+            <!-- digitar o nome-->
+            <label for="name" >Nome</label>
+            <input type="text" id="name" class="contt" placeholder="Nome" required">
+
+            <!-- digitar o email-->
+            <label for="email">Email</label>
+            <input type="text" id="email" class="contt" placeholder="Email" required >
+
+            <!-- digitar o telefone-->
+            <label for="Telefone">Telefone</label>
+            <input type="text" id="telefone" class="contt" placeholder="Telefone" required>
+
+            <!-- digitar o texto a ser enviado -->
+            <textarea name="text" id="textoarea" class="contt">Digite sua mensagem</textarea>
+
+            <!-- botão de enviar formulario -->
+            <button type="submit">Enviar</button>
+            
+        </form>
+    </div>    
+</body>
+</html>

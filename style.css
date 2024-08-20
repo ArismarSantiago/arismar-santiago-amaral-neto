@@ -1,0 +1,274 @@
+
+/*aqui para deixar de acordo com as telas menores, quando vista de dispositiveis moveis
+usando o mesmo css que dos desktop só mudando os tamanhos de fonte, padding, margin, width e etc..*/
+@media only screen and (max-width:500px){
+.lismenu{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-flex;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+a{
+
+    font-size: 13px;
+}
+#menu{
+    font-weight: bold;
+    color: var(---principal2);
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+}
+
+.principal {
+    display: flex;
+   align-items: center; /* Usei para alinhar os itens */
+   gap: 4px; /* isso deu espaço entre a minha foto e a descrição da pagina index */
+   padding: 6px;
+   border: solid 1px var(---principal2);
+   border-radius: 15px;
+   max-width: fit-content;
+   margin: auto;
+   margin-top: 20px;
+   background-color: var(---principal);
+}
+.principal img {
+   max-width: 25%; /* Tamanho máximo da imagem */
+   height: auto; /* Mantém a proporção da imagem */
+   border-radius: 18px; /* arredondei a minha foto */
+   border: 2px solid var(---principal2);
+}
+.dados {
+   max-width: 70%; /* Largura máxima da descrição */
+   color: white;
+}
+.titulo{
+    font-size: 16px!important;
+
+}
+.descri{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+}
+
+/*aqui eu usei o root para colocar minhas duas cores principais que eu queria usar, e sim coloquei as mesmas cores que do site do ava uninter*/
+:root{
+---principal: #4270a1;
+---principal2: #fdb414;
+background-color: #f1f1f1;/*cor de fundo do site inteiro*/ 
+font-family: sans-serif;/*aqui coloquei para estilizar a escrita do meu codigo, a padrão é meio esquisita*/
+}
+
+/*aqui esta o codigo do meu header*/
+header{
+
+    color: var(---principal2);
+    border: 3px var(---principal2);
+    background-color: white;
+    padding: 10px;
+    align-content: center;
+    /*aqui coloquei para dar uma sobreada no header do site, a sombra eu fiz no site: https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 17%);
+-moz-box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 17%);
+box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 17%);
+}
+
+/*aqui coloquei esse id para minha <ul> que contem o nav */
+#menu{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(---principal2);
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+}
+/*aqui para dar aquela estilizada quando o mouse passar em cima*/
+.lismenu:hover{
+    background-color: var(---principal2);
+    border-radius: 10px;
+    /*aqui coloquei sombreamento para aparecer quando passar o ponteiro em cima*/
+    -webkit-box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 17%);
+    -moz-box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 17%);
+    box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 17%);
+
+
+}
+
+/*aqui para contar os padding, margin e etc tudo em um só*/
+* {
+    box-sizing: border-box;
+}
+
+
+
+/*aqui pro link ficar na cor branca quando passar o mouse em cima*/
+a:hover{
+    color: #f1f1f1;
+}
+
+
+/*aqui pra dar uma cor pro linl e tirar a decoração do texto*/
+a {
+   color: var(---principal2);
+   text-decoration: none;
+   padding: 6px;
+}
+
+
+
+/*Aqui coloquei para aparecer somente em dispositivos maiores qque 500px
+e é o codigo da minha imagem principal contendo minha foto, idade e RU*/
+@media only screen and (min-width:500px){
+    .principal {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: solid 1px var(---principal2);
+        border-radius: 30px;
+        background: var(---principal);
+        margin-right: auto;
+        margin-left: auto;
+
+}
+
+/*aqui se encontra o tamanho da minha imagem, dados(RU, Nome, idade) e descrição*/
+.principal img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid var(---principal2);
+}
+.dados {
+    max-width: max-content;
+    color: white;
+}
+.titulo{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.descri{
+    font-size: 18px;
+    font-weight: 300
+}
+
+.lismenu{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-flex;
+    border-radius: 10px;
+
+}
+}
+/* aqui começa style do formulario de contato*/
+.contt{
+    padding: 6px;
+    border-radius: 10px;
+    border: solid 1px var(---principal2);
+    color: #fb3232;
+    background: #ffffff;
+    width: 100%;
+}
+
+/*id do nome*/
+#name{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+/*id do telefone*/
+#telefone{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+/*id do email*/
+#email{
+    font-size: 15px;
+    margin-bottom: 10px;
+
+
+}
+.contato{
+border: 2px var(---principal);
+
+}
+/*aqui é pra dar uma estilizada na label do formulario*/
+.contato label{
+    display: block;
+    padding: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+/*aqui é do botão de enviar do formulario*/
+.contato button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: solid 2px white;
+    background: var(---principal2);
+    border-radius: 15px;
+}
+
+/*aqui é da area do texto do formulario*/
+#textoarea{
+    font-size: 15px;
+    resize: none;
+}
+
+/*mais uma estilizada do form*/
+form{
+    margin: 60px auto;
+    max-width: fit-content;
+    /* text-align: center; */
+    justify-items: center;
+    padding: 60px;
+    border-radius: 30px;
+    background: var(---principal);
+    -webkit-box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 25%);
+    box-shadow: 4px 10px 14px 1px rgb(0 0 0 / 25%);
+
+}
+
+/*Aqui começa o stylo do texto da area sobre mim*/
+
+#textoeu{
+    font-size: 13px;
+}
+.areaeu{
+    background-color: var(---principal);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.pdfimg{
+    width: 100%;
+    height: 1000px;
+
+}
+
+.porti{
+
+    text-align: center;
+    max-width: 600px;
+    box-sizing: content-box;
+    padding: 10px;
+    margin: auto;
+    width: 90%;
+    border: 1px solid #fdb414;
+    background: #4270a1;
+    color: white;
+    border-radius: 10px;
+}
