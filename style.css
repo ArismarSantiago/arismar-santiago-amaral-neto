@@ -32,10 +32,6 @@ a{
    border-radius: 15px;
    max-width: fit-content;
    background-color: var(---principal);
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
 }
 .principal img {
    max-width: 25%; /* Tamanho máximo da imagem */
@@ -57,6 +53,13 @@ a{
 }
 
 
+}
+
+.principal{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 /*aqui eu usei o root para colocar minhas duas cores principais que eu queria usar, e sim coloquei as mesmas cores que do site do ava uninter*/
